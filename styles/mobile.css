@@ -1,0 +1,172 @@
+/* Set the background color to black */
+body {
+    background-color: black;
+    color: white; }
+/* Style the h1 and position the green X behind it */
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff; /* White color for the title */
+    position: relative; /* Allow positioning of green X behind */
+    margin-top: 10px;
+}
+
+/* Green "X" behind h1 */
+h1::before {
+    content: "X"; 
+    position: absolute;
+    top: -15px; /* Moves X a little further down */
+    left: 44%; /* Moves X slightly more to the right */
+    transform: translateX(-50%); /* Keeps X centered */
+    font-size:80px; /* Makes the X a bit smaller */
+    color: rgb(54, 150, 102); /* Solid green color for the X */
+    z-index: -1; /* Place the X behind the text */
+}
+
+/* Center the container and stack elements vertically */
+.container {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding around container */
+}
+
+/* Make sure progress bar is aligned and styled */
+.progress {
+    width: 80%; /*  width of progress bar */
+    height: 20px; /* Height of progress bar */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0; /* Remove additional margin between h1 and progress bar */
+    margin-bottom: 30px;
+}
+
+/* Styling for the progress bar itself */
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 720px) {
+    .progress {
+        height: 15px; /* Slightly smaller for mobile */
+    }
+
+    .container {
+        max-width: 95%; /* Stretch closer to screen edges */
+    }
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 83px;
+}
+
+h3{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 83px;
+    margin-top: 100px;
+}
+
+/* This bit is for my username/password textboxes for login */
+
+label{
+margin-left: 83px;
+margin-top: 25px;
+font-size:17px;
+display: inline-block;
+width: 150px;
+}
+/* input fields for login */
+
+.username-textbox, .password-textbox {
+    width: 300px ;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+
+}
+
+.username-textbox,.password-textbox {
+    box-shadow: 0 0 8px 2px rgb(54, 150, 102);
+    border: 2px solid rgb(54, 150, 102);
+}
+
+
+.login-button{
+    margin-left: 250px;
+    font-size: 18px;
+    margin-top: 80px;
+    width: 20%;
+    padding: 1px;
+    background-color:rgb(54, 150, 102);
+    color: white;
+    border:2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    position: relative;
+    transition:all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Glowing effect when hovered */
+
+.login-button:hover {
+    box-shadow: 0 0 10px 2px white; /* white glow */
+    border:2px solid white;  /*white border */
+}
+
+.create-account-button {
+    margin-left: 80px;
+    font-size: 15px;
+    margin-top: 8px;
+    width: 25%;
+    padding: 1px;
+    background-color: rgb(54, 150, 102);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    box-shadow: 0 0 10px 2px white; /* White glow */
+    border: 2px solid white; /* White border */
+}
+
+
+.create-account-button2 {
+    margin-left: 80px;
+    margin-top: 130px; 
+    font-size: 15px;
+    width: 25%;
+    padding: 1px;
+    background-color: rgb(54, 150, 102);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.create-account-button2:hover {
+    box-shadow: 0 0 10px 2px white; /* White glow */
+    border: 2px solid white; /* White border */
+}
+
+
